@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title>article title</title>
+      <title>欢迎浏览我的第一个博客！！！撒花！！</title>
       <link href="/2021/11/10/article-title/"/>
       <url>/2021/11/10/article-title/</url>
       
         <content type="html"><![CDATA[]]></content>
       
       
+      <categories>
+          
+          <category> 简介 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 个人简介 </tag>
+            
+        </tags>
       
     </entry>
     
