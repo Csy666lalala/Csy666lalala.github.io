@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>添加豆瓣读书</title>
+      <link href="/2021/11/30/tian-jia-dou-ban-du-shu/"/>
+      <url>/2021/11/30/tian-jia-dou-ban-du-shu/</url>
+      
+        <content type="html"><![CDATA[<p>豆瓣书单电影界面<br><em>注意：首先需要检查你的hexo版本是多少，在你的博客目录下执行命令 hexo -v即可，这个豆瓣插件需要的版本需要&lt;4.2.0，否则会出现bug，比如点击书单的在读，想读或者已读会出现一个新的弹出页面，解决办法就是降低hexo的版本，先卸载目前的hexo版本，再安装4.0.0版本的hexo即可，我的版本为4.0.0。</em></p><p>在hexo 博客个性化定制中，加入豆瓣读书界面可要为博客主页添光加彩<br>点击链接查看效果：<a href="https://csy666lalala.github.io/">https://csy666lalala.github.io/</a></p><p><strong>以下展示两种方法：（本质一样）</strong><br>#第一种：<br>##第一步：检查hexo版本<br>在电脑左下角搜索栏（若关闭搜索栏可以使用win键+s键打开搜索框）输入git bash，右键点击选择以管理员身份运行<br>Eg： </p><p>Cd到你的博客目录<br>例如我的目录在g:\blog2  我就输入cd g:\blog2（以英文方式输入且cd后有空格）<br><strong>很重要！！！否则会存到默认位置就是c盘，导致电脑变卡</strong></p><p>输入以下命令：<br>​<code> npm uninstall hexo npm install hexo@4.0.0 -g ​</code></p><p>##第二步：在博客站点目录执行命令安装豆瓣插件<br>同第一步以管理员身法运行gitbash（很重要！！！不然很可能报错）<br>Cd到你的博客目录<br>例如我的目录在g:\blog2  我就输入cd g:\blog2（以英文方式输入且cd后有空格）<br><strong>很重要！！！否则会存到默认位置就是c盘，导致电脑变卡</strong></p><p>安装插件：<br>​<code> npm install hexo-douban --save     ​</code></p><p>##第三步：紧接着在博客站点目录的配置文件_config.yml下，添加如下配置<br>​<code> douban:    user: 252345665    #这个需要修改为你个人的id     builtin: false   #如果想生成豆瓣页面，这个需要设置为true   book:        title: 'This is my book title'        quote: 'This is my book quote'    movie:        title: 'This is my movie title'        quote: 'This is my movie quote'    game:        title: 'This is my game title'        quote: 'This is my game quote'    timeout: 10000 ​</code>  </p><p>    user:：你的豆瓣ID。打开豆瓣，登入账户，然后在右上角点击 ”个人主页“，这时候地址栏的URL大概是这样：<a href="https://www.douban.com/people/xxxxxx/">https://www.douban.com/people/xxxxxx/</a> ，其中的”xxxxxx”就是你的个人ID了。<br>    builtin：是否将生成页面的功能嵌入 hexo s 和 hexo g 中，默认是 false ，另一可选项为 true 。<br>    title： 该页面的标题。<br>    quote： 写在页面开头的一段话,支持html语法。<br>    timeout： 爬取数据的超时时间，默认是 10000ms，如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。<br>如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。</p><p>第四步：然后再主题配置文件_config.yml中添加关于此页面的菜单：(下面是我的配置)<br>​<code> menu:     媒体:        url: /        icon: fas fa-list        children:          - name: 电影            url: /movies            icon: fas fa-film          - name: 书单            url: /books            icon: fas fa-book          - name: 游戏            url: /games            icon: fas fa-gamepad ​</code><br>注意：相当于在配置文件最上面的菜单栏里添加新栏目，不要多打一个menu！！！否则会报错</p><p>##第五步：适配Matery主题：在 /themes/hexo-theme-matery/layout 文件夹下面创建一个名为 douban.ejs 的文件，并将下面的内容复制进去：</p><p>​```&lt;%- partial(‘_partial/post-cover’) %&gt; </p><style>     .hexo-douban-picture img {        width: 100%;     } </style><main class="content">     <div id="contact" class="container chip-container">         <div class="card">             <div class="card-content" style="padding: 30px">                 <h1 style="margin: 10px 0 10px 0px;">&lt;%= page.title %&gt;</h1>                 &lt;%- page.content %&gt;             </div>         </div>         <div class="card">             <div class="card-content" style="text-align: center">                 <h3 style="margin: 5px 0 5px 5px;">如果你有好的内容推荐，欢迎在下面留言！</h3>             </div>         </div>         <div class="card">             &lt;% if (theme.gitalk &amp;&amp; theme.gitalk.enable) { %&gt;                &lt;%- partial('_partial/gitalk') %&gt;            &lt;% } %&gt;             &lt;% if (theme.gitment.enable) { %&gt;                 &lt;%- partial('_partial/gitment') %&gt;             &lt;% } %&gt;             &lt;% if (theme.disqus.enable) { %&gt;                 &lt;%- partial('_partial/disqus') %&gt;             &lt;% } %&gt;             &lt;% if (theme.livere &amp;&amp; theme.livere.enable) { %&gt;                 &lt;%- partial('_partial/livere') %&gt;             &lt;% } %&gt;             &lt;% if (theme.valine &amp;&amp; theme.valine.enable) { %&gt;                 &lt;%- partial('_partial/valine') %&gt;             &lt;% } %&gt;         </div>     </div> </main>​```<p>##第六步：然后在博客站点目录下的node_modules文件夹下找到hexo-douban/lib，文件夹下有三个js文件，分别为：books-generator.js 、games-generator.js 、movies-generator.js，用文本编辑器打开这三个文件，并将其文件内容末尾的代码修改为一下内容：<br>​<code> /* 原文件内容为 layout: [`page`, `post`] ，将其修改为下面的内容*/ layout: [`page`, `douban`] ​</code></p><p>##第七步：最后就是使用并生成相应的页面，执行命令如下<br>​<code>hexo douban​</code></p><p><strong>需要注意的是，通常大家都喜欢用 hexo d 来作为 hexo deploy 命令的简化，但是当安装了 hexo douban 之后，就不能用 hexo d 了，因为 hexo douban 跟 hexo deploy 的前缀都是 hexo d ，你以后执行的 hexo d 将不再是 Hexo 页面的生成，而是豆瓣页面的生成。</strong></p><p>以下是可选的命令参数：<br>​<code> -h, --help    # 帮助页面 -b, --books   # 只生成书单页面 -g, --games   # 只生成游戏页面 -m, --movies  # 只生成电影页面 ​</code></p><p>当站点配置文件的builtin的值为true时，生成页面的功能会嵌入到hexo g和hexo s中，在进行部署生成操作，会自动生成相应的页面。</p><p>第二种：</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> hexo主题美化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> matery主题美化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>尝试写的第一篇博客</title>
       <link href="/2021/11/14/chang-shi-xie-de-di-yi-pian-bo-ke/"/>
       <url>/2021/11/14/chang-shi-xie-de-di-yi-pian-bo-ke/</url>
