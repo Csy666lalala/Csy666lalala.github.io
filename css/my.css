@@ -1,1 +1,10 @@
 /* Here is your custom css styles. */
+
+@font-face{
+    font-family: 'tianyingzhangkaishu';
+    src: url('../font/tianyingzhangkaishu.ttf');
+}
+
+body{
+    font-family: 'tianyingzhangkaishu';
+}
