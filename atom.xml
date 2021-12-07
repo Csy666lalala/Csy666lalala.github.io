@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>陈邵云的博客</title>
+  
+  <subtitle>无虞</subtitle>
+  <link href="http://csy666lalala.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://csy666lalala.github.io/"/>
+  <updated>2021-11-30T01:37:07.208Z</updated>
+  <id>http://csy666lalala.github.io/</id>
+  
+  <author>
+    <name>陈邵云</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>添加豆瓣读书</title>
+    <link href="http://csy666lalala.github.io/2021/11/30/tian-jia-dou-ban-du-shu/"/>
+    <id>http://csy666lalala.github.io/2021/11/30/tian-jia-dou-ban-du-shu/</id>
+    <published>2021-11-29T16:53:21.000Z</published>
+    <updated>2021-11-30T01:37:07.208Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;豆瓣书单电影界面&lt;br&gt;&lt;em&gt;注意：首先需要检查你的hexo版本是多少，在你的博客目录下执行命令 hexo</summary>
+        
+      
+    
+    
+    
+    <category term="hexo主题美化" scheme="http://csy666lalala.github.io/categories/hexo%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+    
+    
+    <category term="matery主题美化" scheme="http://csy666lalala.github.io/tags/matery%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>尝试写的第一篇博客</title>
+    <link href="http://csy666lalala.github.io/2021/11/14/chang-shi-xie-de-di-yi-pian-bo-ke/"/>
+    <id>http://csy666lalala.github.io/2021/11/14/chang-shi-xie-de-di-yi-pian-bo-ke/</id>
+    <published>2021-11-14T14:06:42.000Z</published>
+    <updated>2021-11-29T10:29:00.220Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;经过一个多星期的不懈努力终于成功啦，此刻真是开心开心开心开心哈哈哈哈哈哈哈哈哈哈哈，慢慢摸索相信ta可以越来越好看！！&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;这次加入了一个动漫人物呀&lt;/em&gt;&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>欢迎浏览我的第一个博客！！！撒花！！</title>
+    <link href="http://csy666lalala.github.io/2021/11/10/article-title/"/>
+    <id>http://csy666lalala.github.io/2021/11/10/article-title/</id>
+    <published>2021-11-10T03:13:42.000Z</published>
+    <updated>2021-11-30T00:50:17.194Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;时间不太对啊，应该是2021年23点04分才真正成功上传网址，其过程只能说一波很多很多折吧，如果你也想拥有自己的个人博客就私信滴滴我或者在博客下留言，再次谢谢大家的浏览呀&lt;/p&gt;
+</summary>
+        
+      
+    
+    
+    
+    <category term="简介" scheme="http://csy666lalala.github.io/categories/%E7%AE%80%E4%BB%8B/"/>
+    
+    
+    <category term="个人简介" scheme="http://csy666lalala.github.io/tags/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://csy666lalala.github.io/2021/11/09/hello-world/"/>
+    <id>http://csy666lalala.github.io/2021/11/09/hello-world/</id>
+    <published>2021-11-09T04:04:53.681Z</published>
+    <updated>2021-11-09T04:04:53.681Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
