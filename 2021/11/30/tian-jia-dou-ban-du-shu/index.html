@@ -576,7 +576,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-11-30
+                    2021-12-07
                 </div>
                 
 
@@ -605,27 +605,33 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>豆瓣书单电影界面<br><em>注意：首先需要检查你的hexo版本是多少，在你的博客目录下执行命令 hexo -v即可，这个豆瓣插件需要的版本需要&lt;4.2.0，否则会出现bug，比如点击书单的在读，想读或者已读会出现一个新的弹出页面，解决办法就是降低hexo的版本，先卸载目前的hexo版本，再安装4.0.0版本的hexo即可，我的版本为4.0.0。</em></p>
-<p>在hexo 博客个性化定制中，加入豆瓣读书界面可要为博客主页添光加彩<br>点击链接查看效果：<a href="https://csy666lalala.github.io/">https://csy666lalala.github.io/</a></p>
-<p><strong>以下展示两种方法：（本质一样）</strong><br>#第一种：<br>##第一步：检查hexo版本<br>在电脑左下角搜索栏（若关闭搜索栏可以使用win键+s键打开搜索框）输入git bash，右键点击选择以管理员身份运行<br>Eg： </p>
-<p>Cd到你的博客目录<br>例如我的目录在g:\blog2  我就输入cd g:\blog2（以英文方式输入且cd后有空格）<br><strong>很重要！！！否则会存到默认位置就是c盘，导致电脑变卡</strong></p>
-<p>输入以下命令：<br>​<code> npm uninstall hexo npm install hexo@4.0.0 -g ​</code></p>
-<p>##第二步：在博客站点目录执行命令安装豆瓣插件<br>同第一步以管理员身法运行gitbash（很重要！！！不然很可能报错）<br>Cd到你的博客目录<br>例如我的目录在g:\blog2  我就输入cd g:\blog2（以英文方式输入且cd后有空格）<br><strong>很重要！！！否则会存到默认位置就是c盘，导致电脑变卡</strong></p>
-<p>安装插件：<br>​<code> npm install hexo-douban --save     ​</code></p>
-<p>##第三步：紧接着在博客站点目录的配置文件_config.yml下，添加如下配置<br>​<code> douban:    user: 252345665    #这个需要修改为你个人的id     builtin: false   #如果想生成豆瓣页面，这个需要设置为true   book:        title: 'This is my book title'        quote: 'This is my book quote'    movie:        title: 'This is my movie title'        quote: 'This is my movie quote'    game:        title: 'This is my game title'        quote: 'This is my game quote'    timeout: 10000 ​</code>  </p>
-<p>    user:：你的豆瓣ID。打开豆瓣，登入账户，然后在右上角点击 ”个人主页“，这时候地址栏的URL大概是这样：<a target="_blank" rel="noopener" href="https://www.douban.com/people/xxxxxx/">https://www.douban.com/people/xxxxxx/</a> ，其中的”xxxxxx”就是你的个人ID了。<br>    builtin：是否将生成页面的功能嵌入 hexo s 和 hexo g 中，默认是 false ，另一可选项为 true 。<br>    title： 该页面的标题。<br>    quote： 写在页面开头的一段话,支持html语法。<br>    timeout： 爬取数据的超时时间，默认是 10000ms，如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。<br>如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。</p>
-<p>第四步：然后再主题配置文件_config.yml中添加关于此页面的菜单：(下面是我的配置)<br>​<code> menu:     媒体:        url: /        icon: fas fa-list        children:          - name: 电影            url: /movies            icon: fas fa-film          - name: 书单            url: /books            icon: fas fa-book          - name: 游戏            url: /games            icon: fas fa-gamepad ​</code><br>注意：相当于在配置文件最上面的菜单栏里添加新栏目，不要多打一个menu！！！否则会报错</p>
-<p>##第五步：适配Matery主题：在 /themes/hexo-theme-matery/layout 文件夹下面创建一个名为 douban.ejs 的文件，并将下面的内容复制进去：</p>
-<p>​```&lt;%- partial(‘_partial/post-cover’) %&gt; </p>
-<style> 
-    .hexo-douban-picture img {
-        width: 100%; 
-    } 
+                <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&amp;id=386717&amp;auto=1&amp;height=66"></iframe><br>
+
+<p>豆瓣书单电影界面<br><br>*注意：首先需要检查你的hexo版本是多少，在你的博客目录下执行命令 hexo -v即可，这个豆瓣插件需要的版本需要&lt;4.2.0，否则会出现bug，比如点击书单的在读，想读或者已读会出现一个新的弹出页面，解决办法就是降低hexo的版本，先卸载目前的hexo版本，再安装4.0.0版本的hexo即可，我的版本为4.0.0。*<br></p>
+<p>在hexo 博客个性化定制中，加入豆瓣读书界面可要为博客主页添光加彩<br><br>点击链接查看效果：<a href="https://csy666lalala.github.io/">https://csy666lalala.github.io/</a><br></p>
+<p><strong>以下展示两种方法：（本质一样）</strong><br><br>#第一种：<br><br>##第一步：检查hexo版本<br><br>在电脑左下角搜索栏（若关闭搜索栏可以使用win键+s键打开搜索框）输入git bash，右键点击选择以管理员身份运行<br><br>Eg：<br> </p>
+<p>Cd到你的博客目录<br><br>例如我的目录在g:\blog2  我就输入cd g:\blog2（以英文方式输入且cd后有空格）<br><br><strong>很重要！！！否则会存到默认位置就是c盘，导致电脑变卡</strong><br></p>
+<p>输入以下命令：<br><br>​<code> npm uninstall hexo&lt;br&gt; npm install hexo@4.0.0 -g&lt;br&gt; ​</code></p>
+<p>##第二步：在博客站点目录执行命令安装豆瓣插件<br><br>同第一步以管理员身法运行gitbash（很重要！！！不然很可能报错）<br><br>Cd到你的博客目录 <br><br>例如我的目录在g:\blog2  我就输入cd g:\blog2（以英文方式输入且cd后有空格）<br><br><strong>很重要！！！否则会存到默认位置就是c盘，导致电脑变卡</strong><br></p>
+<p>安装插件：<br><br>​<code> npm install hexo-douban --save    &lt;br&gt; ​</code></p>
+<p>##第三步：紧接着在博客站点目录的配置文件_config.yml下，添加如下配置<br><br>​<code> douban: &lt;br&gt;   user: 252345665    #这个需要修改为你个人的id  &lt;br&gt;   builtin: false   #如果想生成豆瓣页面，这个需要设置为true&lt;br&gt;   book:&lt;br&gt;        title: 'This is my book title' &lt;br&gt;       quote: 'This is my book quote' &lt;br&gt;   movie: &lt;br&gt;       title: 'This is my movie title' &lt;br&gt;       quote: 'This is my movie quote' &lt;br&gt;   game: &lt;br&gt;       title: 'This is my game title' &lt;br&gt;       quote: 'This is my game quote' &lt;br&gt;   timeout: 10000 &lt;br&gt; ​</code>  </p>
+<p>    user:：你的豆瓣ID。打开豆瓣，登入账户，然后在右上角点击 ”个人主页“，这时候地址栏的URL大概是这样：<a target="_blank" rel="noopener" href="https://www.douban.com/people/xxxxxx/">https://www.douban.com/people/xxxxxx/</a> ，其中的”xxxxxx”就是你的个人ID了。<br><br>    builtin：是否将生成页面的功能嵌入 hexo s 和 hexo g 中，默认是 false ，另一可选项为 true 。<br><br>    title： 该页面的标题。<br><br>    quote： 写在页面开头的一段话,支持html语法。<br><br>    timeout： 爬取数据的超时时间，默认是 10000ms，如果在使用时发现报了超时的错(ETIMEOUT)可以把这个数据设置的大一点。<br><br>如果只想显示某一个页面(比如movie)，那就把其他的配置项注释掉即可。<br></p>
+<p>第四步：然后再主题配置文件_config.yml中添加关于此页面的菜单：(下面是我的配置)<br><br>​<code> menu: &lt;br&gt;     媒体: &lt;br&gt;        url: / &lt;br&gt;        icon: fas fa-list &lt;br&gt;        children: &lt;br&gt;          - name: 电影  &lt;br&gt;            url: /movies &lt;br&gt;            icon: fas fa-film &lt;br&gt;          - name: 书单 &lt;br&gt;            url: /books &lt;br&gt;            icon: fas fa-book &lt;br&gt;          - name: 游戏             url: /games             icon: fas fa-gamepad  ​</code>           </p>
+<p>注意：相当于在配置文件最上面的菜单栏里添加新栏目，不要多打一个menu！！！否则会报错 <br></p>
+<p>##第五步：适配Matery主题：在 /themes/hexo-theme-matery/layout 文件夹下面创建一个名为 douban.ejs 的文件，并将下面的内容复制进去：<br></p>
+<p>​```<br>&lt;%- partial(‘_partial/post-cover’) %&gt; </p>
+<style>  
+    .hexo-douban-picture img {       
+        width: 100%;  
+    }  
 </style>
 <main class="content"> 
     <div id="contact" class="container chip-container"> 
@@ -637,17 +643,17 @@
         </div> 
         <div class="card"> 
             <div class="card-content" style="text-align: center"> 
-                <h3 style="margin: 5px 0 5px 5px;">如果你有好的内容推荐，欢迎在下面留言！</h3> 
+                <h3 style="margin: 5px 0 5px 5px;">如果你有好的内容推荐，欢迎在下面留言！</h3>  
             </div> 
         </div> 
         <div class="card"> 
-            &lt;% if (theme.gitalk &amp;&amp; theme.gitalk.enable) { %&gt;
-                &lt;%- partial('_partial/gitalk') %&gt;
-            &lt;% } %&gt; 
-            &lt;% if (theme.gitment.enable) { %&gt; 
+            &lt;% if (theme.gitalk &amp;&amp; theme.gitalk.enable) { %&gt; 
+                &lt;%- partial('_partial/gitalk') %&gt; 
+            &lt;% } %&gt;  
+            &lt;% if (theme.gitment.enable) { %&gt;  
                 &lt;%- partial('_partial/gitment') %&gt; 
-            &lt;% } %&gt; 
-            &lt;% if (theme.disqus.enable) { %&gt; 
+            &lt;% } %&gt;  
+            &lt;% if (theme.disqus.enable) { %&gt;  
                 &lt;%- partial('_partial/disqus') %&gt; 
             &lt;% } %&gt; 
             &lt;% if (theme.livere &amp;&amp; theme.livere.enable) { %&gt; 
@@ -854,7 +860,7 @@
     <div id="rewardModal" class="modal">
         <div class="modal-content">
             <a class="close modal-close"><i class="fas fa-times"></i></a>
-            <h4 class="reward-title">给点支持鸭_&gt;</h4>
+            <h4 class="reward-title">给点支持鸭_&lt;</h4>
             <div class="reward-content">
                 <div class="reward-tabs">
                     <ul class="tabs row">
