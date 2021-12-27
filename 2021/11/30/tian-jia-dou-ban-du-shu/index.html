@@ -583,7 +583,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.2k
+                    2.3k
                 </div>
                 
 
@@ -643,12 +643,15 @@ $  	quote: <span class="token string">'This is my game quote'</span>
 $  timeout: <span class="token number">10000</span> 
 ​``<span class="token variable"><span class="token variable">`</span> 
 
-<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>user:：你的豆瓣ID。打开豆瓣，登入账户，然后在右上角点击 ”个人主页“，这时候地址栏的URL大概是这样：https://www.douban.com/people/xxxxxx/ ，其中的”xxxxxx”就是你的个人ID了。
-	builtin：是否将生成页面的功能嵌入 hexo s 和 hexo g 中，默认是 <span class="token boolean">false</span> ，另一可选项为 <span class="token boolean">true</span> 。
-	title： 该页面的标题。
-	quote： 写在页面开头的一段话,支持html语法。
-	timeout： 爬取数据的超时时间，默认是 10000ms，如果在使用时发现报了超时的错<span class="token punctuation">(</span>ETIMEOUT<span class="token punctuation">)</span>可以把这个数据设置的大一点。
-如果只想显示某一个页面<span class="token punctuation">(</span>比如movie<span class="token punctuation">)</span>，那就把其他的配置项注释掉即可。<span class="token operator">&lt;</span>/p<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>ul<span class="token operator">&gt;</span>    
+  	<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>user:：你的豆瓣ID。打开豆瓣，登入账户，然后在右上角点击 ”个人主页“，这时候地址栏的URL大概是这样：https://www.douban.com/people/xxxxxx/ ，其中的”xxxxxx”就是你的个人ID了。<span class="token operator">&lt;</span>/li<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>builtin：是否将生成页面的功能嵌入 hexo s 和 hexo g 中，默认是 <span class="token boolean">false</span> ，另一可选项为 <span class="token boolean">true</span> 。<span class="token operator">&lt;</span>/li<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>title： 该页面的标题。<span class="token operator">&lt;</span>/li<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>quote： 写在页面开头的一段话,支持html语法。<span class="token operator">&lt;</span>/li<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>li<span class="token operator">&gt;</span>timeout： 爬取数据的超时时间，默认是 10000ms，如果在使用时发现报了超时的错<span class="token punctuation">(</span>ETIMEOUT<span class="token punctuation">)</span>可以把这个数据设置的大一点。<span class="token operator">&lt;</span>/li<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>/ul<span class="token operator">&gt;</span>
+如果只想显示某一个页面<span class="token punctuation">(</span>比如movie<span class="token punctuation">)</span>，那就把其他的配置项注释掉即可。
+
 
 <span class="token comment">## 第四步：然后再主题配置文件_config.yml中添加关于此页面的菜单：(下面是我的配置)</span>
 
@@ -724,7 +727,7 @@ layout: <span class="token punctuation">[</span><span class="token variable">`</
 <span class="token comment">##第七步：最后就是使用并生成相应的页面，执行命令如下</span>
 ​
 <span class="token variable">`</span></span>`` <span class="token function">bash</span>
-$ hexo douban​ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+$ hexo douban​ <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
 <p><strong>需要注意的是，通常大家都喜欢用 hexo d 来作为 hexo deploy 命令的简化，但是当安装了 hexo douban 之后，就不能用 hexo d 了，因为 hexo douban 跟 hexo deploy 的前缀都是 hexo d ，你以后执行的 hexo d 将不再是 Hexo 页面的生成，而是豆瓣页面的生成。</strong></p>
@@ -1336,7 +1339,7 @@ $  games: /games   <span class="token comment"># 这是链接到games页面</spa
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">5k</span>&nbsp;字
+                class="white-color">5.1k</span>&nbsp;字
             
             
             
@@ -1494,7 +1497,7 @@ $  games: /games   <span class="token comment"># 这是链接到games页面</spa
             <span class="badge-subject">PV</span><span class="badge-value bg-brightgreen" id="busuanzi_value_site_pv"></span>
           </div>
           <div class="github-badge">
-            <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">5k</span>
+            <span class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">5.1k</span>
           </div>
     </div>
 	<style>
